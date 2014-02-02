@@ -3,7 +3,7 @@ using System.Linq;
 using System.Text;
 using System.Windows;
 
-namespace RiakBrowser
+namespace RiakIronBrowser
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -80,6 +80,12 @@ namespace RiakBrowser
                 riak.DeleteKey(GetBucket(), GetKey());
                 LoadKeyList();
             }
+        }
+
+        private void SettingsButton_Click(object sender, RoutedEventArgs e)
+        {
+            SettingsWindow window = new SettingsWindow();
+            window.ShowDialog();
         }
     }
 }

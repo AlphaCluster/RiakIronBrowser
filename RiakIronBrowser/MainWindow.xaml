@@ -1,7 +1,7 @@
-﻿<Window x:Class="RiakBrowser.MainWindow"
+﻿<Window x:Class="RiakIronBrowser.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="393">
+        Title="MainWindow" Height="352" Width="397">
     <Grid>
         <ListBox HorizontalAlignment="Left" Height="80" Margin="10,10,0,0" VerticalAlignment="Top" Width="275" Name="BucketListBox"/>
         <Button Content="Load Bucket" HorizontalAlignment="Left" Margin="290,70,0,0" VerticalAlignment="Top" Width="85" Name="BucketLoad" Click="BucketLoad_Click"/>
@@ -10,7 +10,7 @@
         <Button Content="Delete Bucket" HorizontalAlignment="Left" Margin="290,45,0,0" VerticalAlignment="Top" Width="85" Name="DeleteBucketButton" Click="DeleteBucketButton_Click"/>
         <Button Content="Show Key" HorizontalAlignment="Left" Margin="290,126,0,0" VerticalAlignment="Top" Width="85" Name="ShowKeyButton"/>
         <Button Content="Delete Key" HorizontalAlignment="Left" Margin="290,151,0,0" VerticalAlignment="Top" Width="85" Name="DeleteKeyButton" Click="DeleteKeyButton_Click"/>
-        <Button Content="Settings" HorizontalAlignment="Left" Margin="290,289,0,0" VerticalAlignment="Top" Width="85" Name="SettingsButton"/>
+        <Button Content="Settings" HorizontalAlignment="Left" Margin="290,289,0,0" VerticalAlignment="Top" Width="85" Name="SettingsButton" Click="SettingsButton_Click"/>
 
     </Grid>
 </Window>

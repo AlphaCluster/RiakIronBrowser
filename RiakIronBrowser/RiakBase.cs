@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RiakBrowser
+namespace RiakIronBrowser
 {
     public class RiakBase
     {

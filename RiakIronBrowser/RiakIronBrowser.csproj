@@ -73,6 +73,7 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="NodeConfiguration.cs" />
     <Compile Include="NodeWindow.xaml.cs">
       <DependentUpon>NodeWindow.xaml</DependentUpon>
     </Compile>
