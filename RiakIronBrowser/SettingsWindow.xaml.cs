@@ -47,6 +47,44 @@ namespace RiakIronBrowser
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
             exeConfiguration.Save();
+            Close();
+        }
+
+        private void AddNodeButton_Click(object sender, RoutedEventArgs e)
+        {
+            NodeWindow window = new NodeWindow(null);
+            window.ShowDialog();
+            if (window.Node != null)
+                NodeListBox.Items.Add(window.Node);
+        }
+
+        private void RemoveNodeButton_Click(object sender, RoutedEventArgs e)
+        {
+            NodeListBox.Items.Remove(NodeListBox.SelectedItem);
+        }
+
+        private void EditNodeButton_Click(object sender, RoutedEventArgs e)
+        {
+            NodeWindow window = new NodeWindow((NodeConfiguration)NodeListBox.SelectedItem);
+            window.ShowDialog();
+            if (window.Node != null)
+                NodeListBox.SelectedItem = window.Node;
+
+            NodeListBox.Items.Refresh();
+        }
+
+        private void NodeListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (NodeListBox.SelectedIndex >= 0)
+            {
+                RemoveNodeButton.IsEnabled = true;
+                EditNodeButton.IsEnabled = true;
+            }
+            else
+            {
+                RemoveNodeButton.IsEnabled = false;
+                EditNodeButton.IsEnabled = false;
+            }
         }
     }
 }

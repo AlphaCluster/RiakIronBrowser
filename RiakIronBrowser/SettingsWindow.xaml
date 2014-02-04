@@ -9,11 +9,11 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="112,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118" Name="RetryWaitTimeTextBox"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="112,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118" Name="RetryCountTextBox"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="112,13,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118" Name="NodePoolTimeTextBox"/>
-        <ListBox HorizontalAlignment="Left" Height="100" Margin="10,124,0,0" VerticalAlignment="Top" Width="220" Name="NodeListBox"/>
+        <ListBox HorizontalAlignment="Left" Height="100" Margin="10,124,0,0" VerticalAlignment="Top" Width="220" Name="NodeListBox" SelectionChanged="NodeListBox_SelectionChanged"/>
         <Label Content="Nodes" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Width="70"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="160,229,0,0" VerticalAlignment="Top" Width="70"/>
-        <Button Content="Remove" HorizontalAlignment="Left" Margin="85,229,0,0" VerticalAlignment="Top" Width="70"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Width="70" Name="AddNodeButton" Click="AddNodeButton_Click"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="160,229,0,0" VerticalAlignment="Top" Width="70" Name="EditNodeButton" Click="EditNodeButton_Click" IsEnabled="False"/>
+        <Button Content="Remove" HorizontalAlignment="Left" Margin="85,229,0,0" VerticalAlignment="Top" Width="70" Name="RemoveNodeButton" Click="RemoveNodeButton_Click" IsEnabled="False"/>
         <Button Content="Save" HorizontalAlignment="Left" Margin="85,254,0,0" VerticalAlignment="Top" Width="70" Name="SaveButton" Click="SaveButton_Click"/>
     </Grid>
 </Window>
